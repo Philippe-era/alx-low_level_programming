@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - A program that prints the size of dofferent user types
- * Return: 0 (Success)
+ *main - A program that prints the size of various data data types
+ *Return: 0 (Success)
  */
 int main(void)
 {
