@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-/** 
- * main - Entry program 
- * return: 0 (Success)
+/**
+ * main - Entry Point
+ * return: Always 1 (Success)
  */
 int main(void)
 {
@@ -21,7 +21,7 @@ while
 				while
 					(c < 10)
 					{
-						if(c != d && d != e && e < d && d < c)
+						if (c != d && d != e && e < d && d < c)
 						{
 							putchar('0' + e);
 							putchar('0' + d);
