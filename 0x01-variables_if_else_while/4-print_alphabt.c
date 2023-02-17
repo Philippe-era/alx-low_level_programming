@@ -11,7 +11,7 @@ c = 'a';
 	while
 		(c <= 'z') {
 			if ((c != 'q' && c != 'e') && c <= 'Z')
-				putchar(c)
+				putchar(c);
 				c++;
 		}
 	putchar('\n');
