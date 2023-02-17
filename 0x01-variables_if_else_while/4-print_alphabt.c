@@ -9,7 +9,7 @@ int main(void)
 
 	while
 		(c <= 'z') {
-		if ((c != 'q' && c != 'e') && c <= 'Z')
+		if ((c != 'q' && c != 'e') && c <= 'z')
 			putchar(c);
 		c++;
 	}
