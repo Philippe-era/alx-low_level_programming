@@ -10,7 +10,7 @@ char c;
 c = 'a';
 	while
 		(c <= 'z') {
-			if ((c != 'q' && c != 'e') && c <= 'Z')
+			if (( c != 'q' && c != 'e') && c <= 'Z')
 				putchar(c);
 				c++;
 		}
