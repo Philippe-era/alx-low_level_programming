@@ -3,18 +3,20 @@
 /**
  * main Entry - point
  * prints all possible combinations of two two-digit numbers.
- * return: 1 (Success)
+ * return: 0 (Success)
  */
 int main(void)
-	int c = 0;
+	int c;
 	int f_d;
 	int l_d;
 
 	int c2;
 	int f_d2;
 	int l_d2;
-
-	while (c <= 98)
+	
+	
+	while
+(c <= 98)
 {
 	f_d = (c / 10 + '0');
 	l_d = (c % 10 + '0');
