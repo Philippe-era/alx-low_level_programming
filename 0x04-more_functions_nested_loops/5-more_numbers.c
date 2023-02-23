@@ -5,7 +5,7 @@
  * _putchar only thrice
  * Return: 0 - 14 10 times
  */
-void more_numers(void)
+void more_numbers(void)
 {
 
 int i, num;
