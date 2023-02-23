@@ -17,7 +17,7 @@ else
 {
 for (num = 0; num <= (size - 1); num++)
 {
-for (num1 = 0; num1 <= (size - 1) - num; num1++)
+for (num1 = 0; num1 < (size - 1) - num; num1++)
 {
 _putchar(' ');
 }
