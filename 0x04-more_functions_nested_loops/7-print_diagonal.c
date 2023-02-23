@@ -14,7 +14,7 @@ if (n <= 0)
 _putchar('\n');
 }
 else
-
+{
 for (num = 1; num <= n; num++)
 {
 for (num2 = 1; num2 < num ; num2++)
