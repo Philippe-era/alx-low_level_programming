@@ -23,6 +23,7 @@ for (num1 = 2; num1 <= size; num1++)
 {
 _putchar('#');
 }
+_putchar('\n');
 }
 }
-
+}
