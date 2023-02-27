@@ -1,35 +1,36 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "sluggy.h"
+
 
 /**
- * main - program that generates random valid
- * passwords for the program
- * Return: Always 0 (Success)
+ * _atoi - function that convert a string to an integer
+ * @s: string to convert
+ * Return: int
  */
 
-int main(void)
+int _atoi(char *s)
 {
-int i, sum, n;
-int pass[100];
 
-sum = 0;
+int i = 0, n = 0, sigma = 1;
 
-srand(time(NULL));
-
-for (i = 0; i < 100; i++)
+while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
 {
-pass[i] = rand() % 78;
-sum += (pass[i] + '0');
-putchar(pass[i] + '0');
-
-if ((2772 - sum) -'0' < 78)
+if (s[i] == '-')
+sigma *= -1;
+i++;
+}
+while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
 {
-n = 2772 - sum - '0';
-sum += n;
-putchar(n + '0');
-break;
+if (n >= 0)
+{
+n = n * 10 - (s[i] - '0');
+i++;
+}
+else
+{
+n = n * 10 - (s[i] - '0');
 }
 }
-return (0);
+sigma *= -1;
+return (n *sigma);
 }
+
