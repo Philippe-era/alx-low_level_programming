@@ -22,10 +22,10 @@ else
 printf("%02x", *(b + index + byte));
 
 if ((index % 2) != 0 && index != 0)
-break;
-
+print(" ");
+}
 else if (*(b + index + byte) >= 31 && *(b + index + byte) <= 126)
-printf("%d", *(b + index + byte));
+printf("%c", *(b + index + byte));
 else
 printf(".");
 }
