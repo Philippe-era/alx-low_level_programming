@@ -1,25 +1,28 @@
 #include "main.h"
-
 /**
- * _strncpy - concatenates two strings using input number
- * @dest: The string to be joined
- * @n : The number of bytes from src
- * @src: The string to dest
- * Return: A pointer to the resulting dest.
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
-int j = 0;
+	int j;
 
-while (j < n && src[j] != '\0')
-{
-dest[j] = src[j];
-j++;
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
+	return (dest);
 }
-while (j < n)
-{
-dest[j] = '\0';
-j++;
-}
-return (dest);
-}
+
