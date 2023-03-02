@@ -5,7 +5,7 @@
  * @n: the integer to be displayed
  */
 
-void print_numer(int n)
+void print_number(int n)
 {
 unsigned int num = n;
 
