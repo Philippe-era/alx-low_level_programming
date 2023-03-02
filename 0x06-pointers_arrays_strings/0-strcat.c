@@ -1,4 +1,4 @@
-#include "sluggy.h"
+#include "main.h"
 
 /**
  * _strcat -  concatenates the string pointed to the src
