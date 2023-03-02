@@ -8,7 +8,7 @@
  * Return: A pointer to the resulting dest.
  */
 char *_strncpy(char *dest, char *src, int n);
-i{
+{
 int j = 0;
 
 while (j < n && src[j] != '\0')
@@ -21,4 +21,5 @@ while (j < n)
 dest[j] = '\0';
 j++;
 }
-
+return (dest);
+}
