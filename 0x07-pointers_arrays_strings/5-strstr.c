@@ -20,9 +20,9 @@ if (needle[num + 1] == '\0')
 return (haystack);
 num++;
 }
-while {(haystack[num] == needle[num]);
+while (haystack[num] == needle[num]);
 
-}
+
 
 haystack++;
 }
