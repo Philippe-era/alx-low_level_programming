@@ -25,24 +25,24 @@ return (is_divisible(num, increase + 1));
 }
 /**
  * is_prime_number - checks if prime number or not
- * @num: number
+ * @n: number
  * Return: 1 if prime 0 otherwise
  */
-int is_prime_number(int num)
+int is_prime_number(int n)
 {
 
 int increase;
 
 increase = 2;
 
-if (num < 2)
+if (n < 2)
 {
 return (0);
 }
-if (num == 2)
+if (n == 2)
 {
 return (1);
 }
 
-return (is_divisible(num, increase));
+return (is_divisible(n, increase));
 }
