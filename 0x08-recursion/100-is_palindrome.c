@@ -28,7 +28,7 @@ if (l < 1)
 return (1);
 }
 
-if (*s == *(s + 1))
+if (*s == *(s + l))
 {
 return (pali(s + 1, l - 2));
 }
@@ -36,7 +36,7 @@ return (0);
 }
 
 /**
- * is_palidrome - palidrome
+ * is_palindrome - palidrome
  * @s: pointer to a string
  * Return: recursion
  */
