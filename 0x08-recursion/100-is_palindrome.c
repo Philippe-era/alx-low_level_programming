@@ -40,7 +40,7 @@ return (0);
  * @s: pointer to a string
  * Return: recursion
  */
-int is_palidrome(char *s)
+int is_palindrome(char *s)
 {
 int length = str_len_recursion(s);
 
