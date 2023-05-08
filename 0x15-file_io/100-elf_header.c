@@ -45,7 +45,7 @@ void check_elf(unsigned char *e_ident)
  * @e_ident: Array with magic numbers
  *
  * Description: Magic numbers are separated by spaces.
- *
+ */
 void print_magic(unsigned char *e_ident)
 {
 	int num;
@@ -287,7 +287,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	Read_file = read(open_file, header, sizeof(Elf64_Ehdr));
+	read_file = read(open_file, header, sizeof(Elf64_Ehdr));
 	if (read_file == -1)
 	{
 		free(header);
