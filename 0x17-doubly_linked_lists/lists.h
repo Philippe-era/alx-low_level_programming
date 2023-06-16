@@ -8,14 +8,14 @@
  * struct dlistint_s - mdouble linked lists 
  * @num: integer we will use
  * @prev_node: previous node will be back
- * @next_node: the next node will be pointed too
+ * @next: the next node will be pointed too
  * Description: This is about double linked lists
  */
 typedef struct dlistint_s
 {
-    int num;
-    struct dlistint_s *prev_node;
-    struct dlistint_s *next_node;
+    int n;
+    struct dlistint_s *prev;
+    struct dlistint_s *next;
 } dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h);
