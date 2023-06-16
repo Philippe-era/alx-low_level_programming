@@ -33,7 +33,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		count++;
 		help_node = help_node->next;
 	}
-
+	/* fixed */
 	if (count == num && help_node)
 	{
 		node_new->prev = help_node;
