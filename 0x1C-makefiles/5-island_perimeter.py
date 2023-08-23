@@ -1,23 +1,27 @@
 #!/usr/bin/python3
-"""This is an island programme"""
+"""WILL RETURN THE PARAMETER OF THE ISLAND AT HAND"""
 
 
 def island_perimeter(grid):
-    """The perimeter will be returned
-
-    
+    """THIS WILL GIVE YOU THE PERIMETER OF THE ISLAND
+    Args:
+        grid (list): INTEGERS WILL BE RETURNED 
+    Returns:
+        Proper measurement of the island
     """
-    side = len(grid[0])
-    top_side = len(grid)
-    corners = 0
-    capacity = 0
+  
+    corner = 0
+    capacity_island = 0
+    width_perimeter = len(grid[0])
+    height_perimeter = len(grid)
 
-    for initial in range(top_side):
-        for join_num in range(side):
-            if grid[initial][join_num] == 1:
+    for initial in range(height_perimeter):
+        for join_numbers in range(width_perimeter):
+            if grid[initial][join_numbers] == 1:
                 capacity += 1
-                if (j > 0 and grid[initial][join_num - 1] == 1):
-                    corners += 1
-                if (i > 0 and grid[initial - 1][join_num] == 1):
-                    corners += 1
-    return capacity * 4 - corners * 2
+                if (join_numbers > 0 and grid[initial][join_numbers - 1] == 1):
+                    corner += 1
+                if (initial > 0 and grid[initial - 1][join_numbers] == 1):
+                    corner += 1
+    return capacity * 4 - corner * 2
+
